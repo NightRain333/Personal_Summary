@@ -86,7 +86,7 @@ D:\Program Files (x86)\GnuWin32\bin
 
 启动VSCode，下载C++编译环境所需要的插件，如下：
 
-![VSCode插件列表](F:\A_Configuration\B_Software_Installation\B_IDEAndEvironment\B_VSCodeOrVS_Matlab\A_Readme\VSCode插件列表.png)
+![VSCode插件列表](VSCode插件列表.png)
 
 ### 2.VS环境配置
 
