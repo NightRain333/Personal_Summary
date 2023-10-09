@@ -257,17 +257,15 @@ include(CPack)
 
 
 #ifdef __cplusplus 	// __cplusplus 是cpp中的自定义宏，表示这是个cpp的代码
-extern "C"  // c++支持，而标准c不支持
-{
-#endif
+extern "C++"  // 这是c++支持的指定语言链接性的说明符号（extern 引用声明符号），此处是说明后续函数使用C++语言链接性，
+{			  // extern 函数原型：默认使用C++语言链接性；extern "C" 函数原型：使用C语言链接性
+#endif		  // 如果后续函数是使用C语言写的，或者来自C的库，此处应该更换为extern "C"
 	// 在提供者那里方法应该被声明为__declspec(dllexport)，在使用者那里，方法应该被声明为__declspec(dllimport)
 	__declspec(dllexport) int say_hello(); // 函数原型
 	
 #ifdef __cplusplus
 }
 #endif
-
-// int say_hello(); 
 
 #endif
 ```
